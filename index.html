@@ -1,176 +1,424 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
-(window,'G-SEKJ4E9T4H','google_tags_first_party');</script><script async src="/s9cc/"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('set', 'developer_id.dYzg1YT', true);
-				gtag('config', 'G-SEKJ4E9T4H');
-			</script>
-			<meta name="robots" content="noindex, nofollow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-	<meta charset="utf-8">
-	<title>Best Free Bootstrap Website Template - Colorlib</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta name="robots" content="noindex, nofollow">
-
-	<link href="/assets/css/app.css" rel="stylesheet" fetchpriority="high">
-
-	<script>if (top !== self) top.location.replace(self.location.href);</script>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MMFL1YR6W5"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-MMFL1YR6W5');
-	</script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cybersecurity: Protecting People, Data & Systems</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#06b6d4;
+      --text:#e6eef6;
+      --muted:#9fb3c8;
+    }
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#071025);color:var(--text);}
+    .deck{height:100%;display:flex;align-items:center;justify-content:center;padding:2rem;}
+    .slide{
+      width:1000px;max-width:94vw;height:630px;max-height:86vh;background:linear-gradient(180deg,var(--card),#07111a);
+      border-radius:12px;box-shadow:0 10px 40px rgba(2,6,23,0.6);padding:36px;position:relative;overflow:hidden;
+      display:none;flex-direction:column;
+    }
+    .slide.active{display:flex;}
+    header.title{display:flex;align-items:baseline;gap:16px;margin-bottom:8px;}
+    h1{font-size:32px;margin:0;color:var(--text);}
+    h2{font-size:22px;margin:0;color:var(--accent);}
+    .content{flex:1;display:flex;gap:24px;}
+    .left{flex:1;}
+    .bullets{font-size:18px;line-height:1.5;color:var(--text);margin-top:12px;}
+    .bullets ul{padding-left:20px;margin:0;}
+    .notes-panel{width:340px;background:#04101a;border-radius:8px;padding:14px;color:var(--muted);font-size:14px;display:flex;flex-direction:column;gap:8px;}
+    .notes{flex:1;overflow:auto;}
+    footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;font-size:13px;color:var(--muted);}
+    .controls{display:flex;gap:8px;align-items:center;}
+    button{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:8px 12px;border-radius:8px;cursor:pointer;}
+    button.primary{background:linear-gradient(90deg,var(--accent),#7c3aed);border:0;color:#021018;}
+    .meta{font-size:13px;color:var(--muted);}
+    .slide-number{font-weight:600;color:var(--muted);}
+    .logo{height:42px;width:42px;background:linear-gradient(135deg,var(--accent),#7c3aed);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#021018;font-weight:700;}
+    .small{font-size:15px;color:var(--muted);margin-top:6px;}
+    /* Responsive */
+    @media (max-width:1100px){
+      .notes-panel{display:none;}
+      .content{gap:12px;}
+    }
+    /* Simple print-friendly adjustments */
+    @media print{
+      body{background:white;color:black}
+      .slide{box-shadow:none;border:0;height:auto;page-break-after:always;}
+      .notes-panel{display:block;}
+    }
+  </style>
 </head>
-
 <body>
+  <div class="deck" id="deck">
+    <!-- Slide 1: Title -->
+    <section class="slide active" data-notes="Introduce yourself and the purpose of this session. Mention scope: people, data, and systems.">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <header class="title">
+            <div class="logo">CS</div>
+            <div>
+              <h1>Cybersecurity: Protecting People, Data & Systems</h1>
+              <div class="small meta">[Your Organization] • 2026-01-21 • Presenter: [Name]</div>
+            </div>
+          </header>
+        </div>
+        <div style="text-align:right;color:var(--muted)">
+          <div>Duration: 30–45 min</div>
+          <div class="small">Audience: General / Non-technical</div>
+        </div>
+      </div>
+      <div style="flex:1"></div>
+      <footer>
+        <div class="meta">Cybersecurity overview</div>
+        <div class="slide-number">Slide 1 / 13</div>
+      </footer>
+    </section>
 
-<!-- Header -->
-<header class="switcher-bar">
-	<!-- Logo -->
-	<div class="logo">
-		<a href="https://colorlib.com/wp/templates/" title="Colorlib Templates">
-			<img src="/assets/img/logo.png" alt="Colorlib logo" fetchpriority="high" decoding="sync">
-		</a>
-	</div>
+    <!-- Slide 2: Agenda -->
+    <section class="slide" data-notes="Quickly walk through the agenda so the audience knows the roadmap and what to expect.">
+      <h2>Agenda</h2>
+      <div class="content" style="margin-top:8px">
+        <div class="left bullets">
+          <ul>
+            <li>Why cybersecurity matters</li>
+            <li>Threat landscape & common attacks</li>
+            <li>Key defenses & best practices</li>
+            <li>Incident response & next steps</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Provide a roadmap and invite questions to be held until Q&A. Mention that examples will be practical and relevant to everyday work.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">Roadmap for today's session</div>
+        <div class="slide-number">Slide 2 / 13</div>
+      </footer>
+    </section>
 
-	<!-- Product Switcher -->
-	<div class="product-switcher">
-		<a href="#" title="Select a Product">
-			Select a Product
-		</a>
-	</div>
+    <!-- Slide 3: What is Cybersecurity -->
+    <section class="slide" data-notes="Define CIA triad and scope: people, data, systems, devices. Keep definitions brief and concrete.">
+      <h2>What is Cybersecurity?</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Protecting confidentiality, integrity, availability (CIA triad)</li>
+            <li>Defending assets: people, data, systems, devices, services</li>
+            <li>Risk-based approach: reduce likelihood & impact of incidents</li>
+          </ul>
+          <div class="small" style="margin-top:10px;color:var(--muted)">Real-world lens: cybersecurity blends technical controls, processes, and people behavior.</div>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Use a simple example: protecting customer records (confidentiality), ensuring records aren't altered (integrity), and making systems available for customers (availability).</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">Core concepts</div>
+        <div class="slide-number">Slide 3 / 13</div>
+      </footer>
+    </section>
 
-	<!-- Header Buttons -->
-	<div class="header-buttons">
-		<!-- Desktop Button -->
-		<div class="desktop-btn header-btn">
-			<a href="#" title="Desktop View">
-				<svg viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z"/></svg>
-			</a>
-		</div>
+    <!-- Slide 4: Current Threat Landscape -->
+    <section class="slide" data-notes="Share one or two recent headlines or stats relevant to the audience (e.g., ransomware costs rising, phishing trends).">
+      <h2>Current Threat Landscape</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Ransomware growth and high-impact breaches</li>
+            <li>Supply-chain attacks targeting vendors & software</li>
+            <li>Increased phishing and social engineering campaigns</li>
+            <li>Remote work and cloud misconfigurations as common targets</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Mention that attackers follow the path of least resistance—weak credentials, unpatched systems, and user errors are common entry points.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">High-level trends</div>
+        <div class="slide-number">Slide 4 / 13</div>
+      </footer>
+    </section>
 
-		<!-- Tablet Button -->
-		<div class="tablet-btn header-btn">
-			<a href="#" title="Tablet View">
-				<svg viewBox="0 0 24 24"><path d="M18.5 0h-14C3.12 0 2 1.12 2 2.5v19C2 22.88 3.12 24 4.5 24h14c1.38 0 2.5-1.12 2.5-2.5v-19C21 1.12 19.88 0 18.5 0zm-7 23c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7.5-4H4V3h15v16z"/></svg>
-			</a>
-		</div>
+    <!-- Slide 5: Common Attack Types -->
+    <section class="slide" data-notes="Give a very short example for phishing and ransomware. Keep technical detail minimal for general audience.">
+      <h2>Common Attack Types</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Phishing & social engineering — deceptive emails or messages</li>
+            <li>Malware & ransomware — encrypting or stealing data for extortion</li>
+            <li>Account takeover & credential theft — reused or weak passwords</li>
+            <li>Insider threats & supply-chain attacks — compromised partners or staff</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Phishing example: a realistic invoice email asking to change payment details. Ransomware example: vendor backup encrypted leading to downtime.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">What attackers use</div>
+        <div class="slide-number">Slide 5 / 13</div>
+      </footer>
+    </section>
 
-		<!-- Mobile Button -->
-		<div class="mobile-btn header-btn">
-			<a href="#" title="Smartphone View">
-				<svg viewBox="0 0 24 24"><path d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/></svg>
-			</a>
-		</div>
+    <!-- Slide 6: Attack Vectors & Vulnerabilities -->
+    <section class="slide" data-notes="Emphasize both technical and human weak points—email, web, remote access, unpatched software, and human error.">
+      <h2>Attack Vectors & Vulnerabilities</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Email and web (phishing, malicious links)</li>
+            <li>Remote access & VPN misconfigurations</li>
+            <li>Unpatched software and exposed services</li>
+            <li>Human error and poor password hygiene</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Stress that both people and systems must be hardened. Small fixes—like patching and MFA—reduce many risks quickly.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">How attacks reach you</div>
+        <div class="slide-number">Slide 6 / 13</div>
+      </footer>
+    </section>
 
-		<!-- Favorites Button -->
-		<div class="favorites-btn header-btn">
-			<a href="#" title="View Favorites">
-				<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-				<span class="favorites-badge">0</span>
-			</a>
-		</div>
+    <!-- Slide 7: Risk Management Framework -->
+    <section class="slide" data-notes="Introduce Identify, Protect, Detect, Respond, Recover (NIST). Suggest simple initial risk scoring.">
+      <h2>Risk Management Framework</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Identify — know assets and risks</li>
+            <li>Protect — implement controls (MFA, patching, backups)</li>
+            <li>Detect — monitoring and alerts</li>
+            <li>Respond & Recover — incident playbooks, backups, lessons learned</li>
+          </ul>
+          <div class="small" style="margin-top:10px;color:var(--muted)">Map controls to business impact and prioritize highest-risk items first.</div>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Recommend a simple likelihood x impact matrix and start with the top 5 assets/processes to protect.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">NIST-style lifecycle</div>
+        <div class="slide-number">Slide 7 / 13</div>
+      </footer>
+    </section>
 
-		<!-- Purchase Button -->
-		<div class="purchase-btn header-btn">
-			<a href="#" title="Buy now">
-				<svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-			</a>
-		</div>
+    <!-- Slide 8: Core Technical Controls -->
+    <section class="slide" data-notes="Highlight MFA and patching as highest-impact, then EDR and segmentation. Keep to practical explanations.">
+      <h2>Core Technical Controls</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Multi-factor authentication (MFA) — protect accounts</li>
+            <li>Patching & vulnerability management — fix known flaws</li>
+            <li>Endpoint protection & EDR — detect malware and intrusions</li>
+            <li>Network segmentation & least privilege — limit attacker movement</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Recommend enabling MFA everywhere, automate patching where possible, and ensure backups are isolated from production systems.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">High-impact defenses</div>
+        <div class="slide-number">Slide 8 / 13</div>
+      </footer>
+    </section>
 
-		<!-- Close Button -->
-		<div class="remove-btn header-btn">
-			<a href="#" title="Close this bar">
-				<svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-			</a>
-		</div>
-	</div>
-</header>
+    <!-- Slide 9: Organizational & Process Controls -->
+    <section class="slide" data-notes="Emphasize awareness training, access reviews, backups, and DR tests. Suggest phishing exercises and tabletop drills.">
+      <h2>Organizational & Process Controls</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Security awareness training & simulated phishing</li>
+            <li>Backup strategy & disaster recovery testing</li>
+            <li>Access reviews, role-based access & identity governance</li>
+            <li>Policies, vendor assessments, and change control</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Training should be brief, frequent, and relevant. Test backups regularly and run tabletop exercises to improve response readiness.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">People & process</div>
+        <div class="slide-number">Slide 9 / 13</div>
+      </footer>
+    </section>
 
-<!-- Products Modal -->
-<section class="switcher-body">
-	<div class="modal-header">
-		<div>
-			<h2>Select a Template</h2>
-			<span class="template-count"></span>
-		</div>
-		<button class="modal-close" title="Close">
-			<svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-		</button>
-	</div>
-	<nav class="tab-navigation">
-		<button class="tab-btn active" data-tab="all">
-			<span class="tab-label">All Templates</span>
-		</button>
-		<button class="tab-btn" data-tab="popular">
-			<span class="tab-icon">
-				<svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-			</span>
-			<span class="tab-label">Popular</span>
-		</button>
-		<button class="tab-btn" data-tab="favorites">
-			<span class="tab-icon">
-				<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-			</span>
-			<span class="tab-label">Favorites</span>
-			<span class="tab-count favorites-count" data-count="0">0</span>
-		</button>
-	</nav>
-	<div class="filter-bar">
-		<div class="search-box">
-			<input type="text" id="template-search" placeholder="Search templates..." autocomplete="off">
-		</div>
-		<div class="category-filters" id="category-filters">
-			<!-- Categories populated by JS -->
-		</div>
-		<div class="color-filters" id="color-filters">
-			<span class="color-label">Colors:</span>
-			<button class="color-swatch" data-color="all" title="All Colors"><span class="swatch-all"></span></button>
-			<button class="color-swatch" data-color="red" title="Red" style="--swatch-color: #e53935"></button>
-			<button class="color-swatch" data-color="orange" title="Orange" style="--swatch-color: #ff9800"></button>
-			<button class="color-swatch" data-color="yellow" title="Yellow" style="--swatch-color: #fdd835"></button>
-			<button class="color-swatch" data-color="green" title="Green" style="--swatch-color: #43a047"></button>
-			<button class="color-swatch" data-color="teal" title="Teal" style="--swatch-color: #00acc1"></button>
-			<button class="color-swatch" data-color="blue" title="Blue" style="--swatch-color: #1e88e5"></button>
-			<button class="color-swatch" data-color="purple" title="Purple" style="--swatch-color: #8e24aa"></button>
-			<button class="color-swatch" data-color="pink" title="Pink" style="--swatch-color: #ec407a"></button>
-			<button class="color-swatch" data-color="brown" title="Brown" style="--swatch-color: #795548"></button>
-			<button class="color-swatch" data-color="grey" title="Grey" style="--swatch-color: #757575"></button>
-			<button class="color-swatch" data-color="black" title="Dark" style="--swatch-color: #212121"></button>
-			<button class="color-swatch" data-color="white" title="Light" style="--swatch-color: #f5f5f5"></button>
-		</div>
-	</div>
-	<div class="products-wrapper">
-		<div class="products-list"></div>
-	</div>
-</section>
+    <!-- Slide 10: Incident Response Basics -->
+    <section class="slide" data-notes="Outline prepare, detect, contain, recover, and learn. Stress the value of playbooks and communication plans.">
+      <h2>Incident Response Basics</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Prepare — playbooks, roles, and communication plans</li>
+            <li>Detect & Contain — triage, isolate affected systems</li>
+            <li>Recover — restore from backups, validate integrity</li>
+            <li>Learn — post-incident review and updates to controls</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Recommend regular tabletop exercises and a clear escalation path to leadership and legal as needed.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">Respond and improve</div>
+        <div class="slide-number">Slide 10 / 13</div>
+      </footer>
+    </section>
 
-<!-- Preloader -->
-<div class="preloader">
-	<div class="preloader-spinner"></div>
-</div>
+    <!-- Slide 11: Practical Recommendations (Top 10) -->
+    <section class="slide" data-notes="List quick wins and a 90-day roadmap. Suggest prioritizing MFA, patching, and backups.">
+      <h2>Practical Recommendations — Top Actions</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Enforce MFA everywhere</li>
+            <li>Patch systems and apps routinely</li>
+            <li>Back up critical data and test restores</li>
+            <li>Train employees & run phishing tests</li>
+            <li>Monitor logs and limit admin access</li>
+            <li>Encrypt sensitive data and use secure configs</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Offer a 90-day plan: 1) Enable MFA, 2) Patch top servers & endpoints, 3) Verify backups, 4) Run one phishing test, 5) Review privileged accounts.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">Top practical actions</div>
+        <div class="slide-number">Slide 11 / 13</div>
+      </footer>
+    </section>
 
-<!-- Product iframe -->
-<iframe class="product-iframe" loading="lazy"></iframe>
+    <!-- Slide 12: Summary & Next Steps -->
+    <section class="slide" data-notes="Close with a single, actionable item the audience can do tomorrow (e.g., enable MFA) and invite Q&A.">
+      <h2>Summary & Next Steps</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Threats are real — use layered defenses</li>
+            <li>Start with high-impact controls: MFA, patching, backups</li>
+            <li>Plan for incidents: playbooks, tests, and training</li>
+            <li>Next steps: assessment, prioritized fixes, tabletop exercise</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Close by asking the audience for one commitment (e.g., enable MFA on personal accounts) and schedule a follow-up assessment meeting.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">Wrap-up & action items</div>
+        <div class="slide-number">Slide 12 / 13</div>
+      </footer>
+    </section>
 
-<!-- JavaScript -->
-<script src="/assets/js/products.js"></script>
-<script src="/assets/js/colors.js"></script>
-<script src="/assets/js/app.js"></script>
+    <!-- Slide 13: Appendix — Resources & Glossary -->
+    <section class="slide" data-notes="Point attendees to resources like NIST, CISA, SANS. Offer to send slide deck and provide contact info.">
+      <h2>Appendix — Resources & Glossary</h2>
+      <div class="content">
+        <div class="left bullets">
+          <ul>
+            <li>Key resources: NIST Cybersecurity Framework, CISA guidance, SANS security awareness</li>
+            <li>Glossary: MFA, EDR, CIA triad, RTO/RPO (backup terms)</li>
+            <li>Contact: [Presenter Name] — [email@example.com]</li>
+          </ul>
+        </div>
+        <div class="notes-panel" aria-hidden="true">
+          <strong style="color:var(--text)">Speaker notes</strong>
+          <div class="notes">Offer to share an assessment checklist and schedule a follow-up. Provide links in follow-up email or intranet page.</div>
+        </div>
+      </div>
+      <footer>
+        <div class="meta">Further reading & contact</div>
+        <div class="slide-number">Slide 13 / 13</div>
+      </footer>
+    </section>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"cd0b4b3a733644fc843ef0b185f98241","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+  </div>
+
+  <!-- Controls -->
+  <div style="position:fixed;left:50%;transform:translateX(-50%);bottom:18px;display:flex;gap:10px;align-items:center;z-index:60;">
+    <button id="prevBtn" aria-label="Previous slide">← Prev</button>
+    <button id="nextBtn" class="primary" aria-label="Next slide">Next →</button>
+    <button id="toggleNotesBtn" aria-pressed="false">Show Notes</button>
+    <div id="counter" style="color:var(--muted);font-weight:600">1 / 13</div>
+  </div>
+
+  <script>
+    (function(){
+      const slides = Array.from(document.querySelectorAll('.slide'));
+      let index = 0;
+      const total = slides.length;
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const toggleNotesBtn = document.getElementById('toggleNotesBtn');
+      const counter = document.getElementById('counter');
+      let notesVisible = true;
+
+      function show(i){
+        if(i<0) i=0;
+        if(i>=slides.length) i=slides.length-1;
+        slides.forEach((s,idx)=> s.classList.toggle('active', idx===i));
+        index = i;
+        counter.textContent = (index+1) + ' / ' + total;
+        // update footer slide-number inside active slide
+        const active = slides[index];
+        // show/hide notes panel based on toggle and viewport
+        const notesPanel = Array.from(active.querySelectorAll('.notes-panel'));
+        notesPanel.forEach(p => p.style.display = notesVisible ? 'flex' : 'none');
+        toggleNotesBtn.textContent = notesVisible ? 'Hide Notes' : 'Show Notes';
+        toggleNotesBtn.setAttribute('aria-pressed', String(notesVisible));
+      }
+
+      prevBtn.addEventListener('click', ()=> show(index-1));
+      nextBtn.addEventListener('click', ()=> show(index+1));
+
+      document.addEventListener('keydown', (e)=>{
+        if(e.key === 'ArrowRight' || e.key === 'PageDown') { show(index+1); }
+        if(e.key === 'ArrowLeft' || e.key === 'PageUp') { show(index-1); }
+        if(e.key === 'n' && (e.ctrlKey || e.metaKey)) { // Ctrl/Cmd+N toggles notes
+          notesVisible = !notesVisible;
+          show(index);
+        }
+      });
+
+      toggleNotesBtn.addEventListener('click', ()=> {
+        notesVisible = !notesVisible;
+        show(index);
+      });
+
+      // Initialize
+      show(0);
+
+      // Make data-notes available inside notes-panel if panel missing
+      slides.forEach(slide=>{
+        const panel = slide.querySelector('.notes-panel');
+        if(panel && !panel.querySelector('.notes').textContent.trim()){
+          const txt = slide.getAttribute('data-notes') || '';
+          panel.querySelector('.notes').textContent = txt;
+        }
+      });
+    })();
+  </script>
 </body>
-
 </html>
